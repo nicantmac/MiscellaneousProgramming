@@ -1,4 +1,4 @@
-# My Code Notes 🧠
+# Code Notes 🧠
 
 Personal repo where I keep:
 - Syntax reminders (like how a switch statement works)
