@@ -6,10 +6,6 @@ Personal repo where I keep:
 - Debugging patterns and gotchas I’ve encountered
 - Code from languages I’m learning
 
-### Why?
-Because sometimes you just need to remind yourself:
-> "Wait, how do I even write a for-loop in JavaScript?"
-
 ### Sections:
 - `/basics`: Quick syntax and language fundamentals
 - `/dsa`: My algorithm/data structure practice
