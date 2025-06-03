@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+// Here we are going to work on Switch Statements
+
+/******
+*
+* Let's write a Switch statement that does the following:
+*
+* 1. Remember switch statements in C++, the cases can only register ints and not strings.
+*
+* 2. Make a switch statement that takes input from user (1-7) to choose a day of the week.
+*
+* 3. Corresponding to the number chosen, print a statement accurate to the day i.e. "Thank God it's Friday".
+*
+*******/
+
+int main() {
+
+    int weekDay;
+    cout << "Enter a number to choose a day of the week? ";
+    cin >> weekDay;
+
+    switch (weekDay) {
+        case 1:
+            cout << "It's Monday. Ugh, worst day of the week." << endl;
+            break;
+        case 2:
+            cout << "It's Tuesday. Still feels like Monday" << endl;
+            break;
+        case 3:
+            cout << "It's Wednesday. Nice another workday." << endl;
+            break;
+        case 4:
+            cout << "It's Thursday. One more day till the weekend." << endl;
+            break;
+        case 5:
+            cout << "It's Friday. Party Time!" << endl;
+            break;
+        case 6:
+            cout << "It's Saturday. Chill day!" << endl;
+             break;
+        case 7:
+            cout << "It's Sunday. Weekends feel like 2 minutes *rolls eyes*" << endl;
+            break;
+        default:
+            cout << "Unknown Day";
+    }
+
+    return 0;
+}
