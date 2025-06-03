@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+// Here we are going to work on Arrays in C++
+
+/******
+*
+* Let's write an Array that does the following:
+*
+* Note: An array in C++ is a collection of elements of the same data type.
+* Where the values are stored in contiguous memory locations.
+* Arrays have a fixed size that must be known at compile time.
+*
+*  1. Make a list of nums 1-10 and only print out the even nums in that list.
+*
+*******/
+
+int main() {
+
+    int numList[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    cout << "The even list is created: ";
+
+    // This for loop line will start from index zero, then stop at the maximum index, and it will increment by 1.
+    for (int i = 0; i < sizeof(numList) / sizeof(numList[0]); i++) {
+
+        // Used modulus to divide the numbers in the list and if the reminder is zero then it's an even integer.
+        if (numList[i] % 2 == 0) {
+            // Have the system print out those even numbers with spaces in between and all on the same line.
+            cout << numList[i] << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
