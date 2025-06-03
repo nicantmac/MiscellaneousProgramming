@@ -1,0 +1,48 @@
+
+#include <iostream>
+using namespace std;
+
+// Here we are going to work on If-Else and Switch Statements
+
+/******
+* Let's write an if-else statement that does the following:
+*
+* 1. If the network is connected and the firewall is enabled, but the power is off, set a variable status to "System in standby mode."
+*
+* 2. If the network is connected, power is on, and the firewall is enabled, set status to "System fully operational."
+*
+* 3. If the network is not connected, set status to "No internet connection." 
+*
+* 4. If the firewall is disabled, set status to "Warning: Firewall disabled!" (regardless of other conditions).
+*
+*******/
+
+int main() {
+    string status;
+
+    bool networkConnected = true;
+    bool powerOn = false;
+    bool firewallEnabled = true;
+
+    if (!firewallEnabled) {
+        status = "Warning: Firewall disabled!";
+        cout << status << endl;
+    }
+    else if (networkConnected) {
+        if (powerOn) {
+            status = "System fully operational.";
+        }
+        else {
+            status = "System in standby mode.";
+        }
+        cout << status << endl;
+    }
+    else {
+        status = "No internet connection.";
+        cout << status << endl;
+    }
+    
+    return 0;
+}
+
+ 
