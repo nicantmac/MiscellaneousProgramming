@@ -1,63 +1,42 @@
 #include <iostream>
 using namespace std;
 
-class Student {
-    // These below are what make up an object, which is attributes and methods. //
+// Format: Practice keeping your classes and other def-functions above your int main function.
 
-    public:
-        // These below are attributes (data members).
-        int numID;
-        string firstName;
-        string lastName;
-        int gradYear;
-        bool lunch;
-
-        // These below are methods (member functions), because they're functions.
-        // To call an object's methods, you use the dot notation (.):
-        void eat() {
-            if (lunch == true) {
-                cout << "This student has eaten lunch already.";
-            } else {
-                cout << "This student hasn't been called to lunch.";
-            }
-        }
+class Book1 {
+public:
+    string title;
+    string author;
+    int pages;
 };
 
-int main() {
+class Book2 {
+    public:
+        string title = "Lord Of The Rings";
+        string author = "John R. Reuel Tolkein";
+        int pages = 700;
+};
 
-    vector<Student> studentsList = {
-            {12345, "John", "", 2025, false},
-            {94430, "Sarah", "", 2025, false},
-            {12774, "Mike", "", 2023, true},
-            {41085, "Emily", "", 2024, true},
-            {57823, "David", "", 2024, false}
-    };
 
-    cout << "Students print names below:" << endl;
+int main () {
+    Book1 book1; 
+    // You can declare inside the class, then initialize in the main function.
+    
+    book1.title = "Harry Potter";
+    book1.author = "JK Rowling";
+    book1.pages = 835;
 
-    for (int i = 0; i < studentsList.size(); i++) {
-        cout << (i + 1) << ". ";
-        getline(cin, studentsList[i].firstName);
-    }
-
-    cout << endl;
-
-    for (int i = 0; i < studentsList.size(); i++) {
-        cout << "≈Student " << (i + 1) << "≈" << endl;
-        cout << "Name: " << studentsList[i].firstName << " " << studentsList[i].lastName << endl;
-        cout << "Student Info: (ID: " << studentsList[i].numID << ")," << " Graduating in " << studentsList[i].gradYear << "\n" << endl;
-    }
-
-    // getline creates a newline when finished
-    // For calling an objects method, you don't have to cout the function.
-
-    for (int i = 0; i < studentsList.size(); i++) {
-        if (studentsList[i].lunch) {
-            cout << studentsList[i].firstName << "'s section has attended lunchtime." << endl;
-        } else {
-            cout << studentsList[i].firstName << "'s section haven't been called to lunchtime yet." << endl;
-        }
-    }
+    Book2 book2;
+    // You can declare and initialize inside the class, then just call in the int main function.
+    cout << "Book #1:" << endl;
+    cout << "Book#1 Title: " << book1.title << endl;
+    cout << "Book#1 Written by: " << book1.author << endl;
+    cout << "Book#1 has " << book1.pages << " pages."<< endl;
+    cout << endl; // create a new line.
+    cout << "Book #2:" << endl;
+    cout << "Book#2 Title: " << book2.title << endl;
+    cout << "Book#2 Written by: " << book2.author << endl;
+    cout << "Book#2 has " << book2.pages << " pages."<< endl;
 
     return 0;
 }
