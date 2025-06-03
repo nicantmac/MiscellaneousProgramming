@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+// Here we are going to work on Switch Statements
+
+/******
+*
+* Let's write a Switch statement that does the following:
+*
+* 1. Remember switch statements in C++, the cases can only register ints and not strings.
+*
+* 2. Make a switch statement that is set up like a grading system that ranks (A-F).
+*
+* 3. Take user's input and have them enter their grade(s).
+*
+* 4. Use integer division (score / 10) to determine the grade category.
+*
+*******/
+
+int main() {
+
+    int numericScore;
+    cout << "Please enter your test score (0-100): ";
+    cin >> numericScore;
+
+
+    if (numericScore < 0 || numericScore > 100) {
+        cout << "Invalid score! Please enter a number between 0 and 100." << endl;
+    } else {
+        // Determine grade category using integer division
+        switch (numericScore / 10) {
+            case 10: // This handles scores 100
+            case 9:
+                cout << "You earned an A." << endl;
+                break;
+            case 8:
+                cout << "You earned a B." << endl;
+                break;
+            case 7:
+                cout << "You earned a C." << endl;
+                break;
+            case 6:
+                cout << "You earned a D." << endl;
+                break;
+            default: // This will cover scores from 0-59
+                cout << "Unfortunately, you didn't pass the course." << endl;
+        }
+    }
+
+
+    return 0;
+}
