@@ -1,0 +1,53 @@
+
+#include <iostream>
+using namespace std;
+
+// Here we are going to work on Switch Statements
+
+/******
+*
+* Let's write a Switch statement that does the following:
+*
+* 1. Remember switch statements in C++, the cases can only register ints and not strings.
+*
+* 2. Make a switch statement that takes input from user to enter two numbers firstNum and secondNum respectively.
+*
+* 3. Then have the user type an operator to calculate the numbers.
+*
+*******/
+
+int main() {
+
+    int firstNum, secondNum;
+    cout << "Enter first number: ";
+    cin >> firstNum;
+
+    cout << "Enter second number: ";
+    cin >> secondNum;
+
+    char eval;
+    cout << "Enter operator (+, -, *, /, %): ";
+    cin >> eval;
+
+    switch (eval) {
+        case'+':
+            cout << "The calculator outputs: " << firstNum + secondNum;
+            break;
+        case'-':
+            cout << "The calculator outputs: " <<  firstNum - secondNum;
+            break;
+        case'*':
+            cout << "The calculator outputs: " <<  firstNum * secondNum;
+            break;
+        case'/':
+            cout << "The calculator outputs: " <<  firstNum / secondNum;
+            break;
+        case'%':
+            cout << "The calculator outputs: " <<  firstNum % secondNum;
+            break;
+        default:
+            cout << "Invalid operator entered. Try again.";
+    }
+
+    return 0;
+}
