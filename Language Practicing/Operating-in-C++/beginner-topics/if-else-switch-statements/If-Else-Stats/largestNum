@@ -2,6 +2,15 @@
 #include <iostream>
 using namespace std;
 
+// Here we are going to work on If-Else and Switch Statements
+
+/******
+* Let's write an if-else statement that does the following:
+*
+* 1. Here we will start off with to three nums, you job is to utilize if-else to output the biggest number.
+*
+*******/
+
 int main() {
 
     int x = 15, y = 20, z = 10;
