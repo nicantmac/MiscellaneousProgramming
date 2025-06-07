@@ -55,13 +55,5 @@ int main() {
     cout << "First letter of your name: " << first_letter << endl;
     cout << "Do you like movies? " << (likes_movies ? "Yes" : "No") << endl;
 
-    // Demonstrating pointer usage
-    string joeBiden = "1600 Pennsylvania Avenue NW, Washington, DC 20500";
-    string roBoT = "1234 Doxxed Ln, Bolbingbor, Saturn 33901";
-    string *pointBot = &roBoT; // Pointer storing the memory address of roBoT
-
-    cout << "\nThe address for the Former President is " << joeBiden << endl;
-    cout << "The address for the Robot is " << *pointBot << endl; // Dereferencing pointer to get the value
-
     return 0;
 }
