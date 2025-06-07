@@ -1,18 +1,13 @@
 
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-// Here we are going to work on Arrays in C++
-
-/******
-*
+/*****
 * Let's practice Pointers and memory management that does the following:
 *
 * 1. Here create two variables that hold addresses instead of values and exchange them by making a function.
 *
-*******/
-
+*****/
 
 // This will be the function swaps two numbers.
 void swap(int *swap_x, int *swap_y) {
@@ -35,9 +30,7 @@ int main() {
 
     // Call the swap function, then print the numbers before and after the swapping.
     cout << "Before edit: " << x << " and "<< y << endl;
-
     swap(&x, &y); // Put the address in the function.
-
     cout << "After edit: " << x << " and "<< y << endl;
 
     return 0;
