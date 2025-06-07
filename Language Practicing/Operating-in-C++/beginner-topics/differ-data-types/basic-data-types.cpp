@@ -44,29 +44,6 @@ int main() {
         cout << "You are not old enough for the bar. The kid section is to your left.\n";
     }
 
-    // Declaring additional variables
-    string fav_movie, fav_snack, fav_drink;
-    cout << "\n" << name << " what is your favorite movie? ";
-    cin >> fav_movie;
-
-    cout << "What is your favorite snack during a movie? ";
-    cin >> fav_snack;
-
-    // Checking favorite snack
-    if (fav_snack == "popcorn") {
-        cout << "You're actually disgusting. I'm not even gonna ask what drink you like.";
-    } else {
-        cout << "That is a good snack for a movie.\n";
-        
-        cout << "\nWhat is your favorite drink during a movie - (Choose: soda/slurpie/juice)? ";
-        cin >> fav_drink;
-        
-        if (fav_drink == "soda") {
-            cout << "Really...soda during a movie. Sigh smh!\n";
-        } else {
-            cout << "That is actually not a bad combo. Enjoy!\n";
-        }
-    }
 
     // Demonstrating different data types
     double movie_rating = 8.5; // Double for decimal values
