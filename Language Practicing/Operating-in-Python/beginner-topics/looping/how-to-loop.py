@@ -1,4 +1,3 @@
-
 num_lst = []
 
 first_num = int(input("Enter a number: "))
