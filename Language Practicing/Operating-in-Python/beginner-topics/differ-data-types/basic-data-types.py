@@ -1,24 +1,29 @@
-# fav_movies
+# Here you will understand; Strings (str), Integers (int), Floats (float), Booleans (bool)
+
+# Strings with user-input
 horror = input("What is their favorite horror/thriller movie?: ")
-scifi = input("What is their favorite sci-fi movie?: ")
-rom = input("What is their favorite romantic movie?: ")
 best = input("What is the best movie of all time?: ")
 
-print("Your favorite horror film is:", horror)
-print("Your favorite sci-fi film is:", scifi)
-print("Your favorite romantic movie is:", rom)
-print("Of course the best movie of all time is", best)
+print("Your favorite horror film is: ", horror)
+print("Of course the best movie of all time is: ", best)
 
+# Here let's create a quasi calculator that's able to calculate Ints and Floats
 
-# worst_calculator
+# Integers
 num1 = int(input("\nEnter a whole number #1: "))
 num2 = int(input("Enter one more whole number #2: "))
-float1 = float(input("Let's enter decimal #1: "))
-float2 = float(input("Let's enter another decimal #2: "))
-float3 = float(input("Let's enter one last decimal #3: "))
-
 total_nums = num1 + num2
-total_floats = float1 * float2 * float3
+print("The sum of the integers ", num1, " and ", num2, " is ", total_nums)
 
-print("The sum of the integers", num1, "and", num2, "is", total_nums)
-print("Multiplying the floats", str(float1) + ",", float2, "and", float3, "equals", str(total_floats))
+# Floats
+float1 = float(input("Enter decimal number #1: "))
+float2 = float(input("Enter decimal number #2: "))
+float3 = float(input("Enter decimal number #3: "))
+total_floats = float1 * float2 * float3
+print("Multiplying the floats: ", float1 + ", ", float2, " and ", float3, " equals ", total_floats)
+
+# Booleans
+likes_movies = True
+likes_cardio = False
+print(f"\nDo you like movies? Answer: {likes_movies}")
+print(f"\nDo you like cardio? Answer: {likes_cardio}")
