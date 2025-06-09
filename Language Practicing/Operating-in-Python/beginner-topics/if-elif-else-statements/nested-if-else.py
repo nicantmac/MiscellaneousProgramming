@@ -1,13 +1,18 @@
 # Here will understand and practice nesting if-else statements
 
 # Let's understand our college journey with a nested if-else statement choosing a STEM field
+# ----- Notes/Remonders -----
 
+# Let's use the STEM field to better understand nested conditional statements
 print("=== STEM Major Advisor ===")
+# Let's prompt the user to choose an STEM path and store that data
 field = input("Which STEM field are you interested in? (engineering / science / technology / mathematics): ").lower()
 
+# Starting with engineering, if field = engineering, we'll nest more if-else statements to further specify the desired path
 if field == "engineering":
     branch = input("Which branch? (mechanical / electrical / civil / chemical): ").lower()
 
+    # Any of these statements will print if user's entry is equal to any of the conditionals
     if branch == "mechanical":
         print("Mechanical Engineering: Great choice for designing machines and working with robotics!")
     elif branch == "electrical":
