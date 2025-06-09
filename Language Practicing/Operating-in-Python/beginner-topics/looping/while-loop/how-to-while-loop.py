@@ -5,19 +5,19 @@
 # If the condition becomes False, the looping will stop.
 # You must make sure the condition eventually becomes False → or you'll create an infinite loop!
 
-# Here we start off with basic while looping
+# Here we start off with basic while looping, counting to 5
 print("Counting from 1 to 5 using while loop:")
 counter = 1
 while counter <= 5:
     print(counter)
-    counter += 1  # If you forget this line, you'll encounter an infinite loop.
+    counter += 1  # Before looping again, increment the count by 1. If you forget this line, you'll encounter an infinite loop.
 
 # Let's practice while looping to validate a user's input
+# If the user enters a number greater than zero, let's exit and move on
 print("\nEnter a positive number (loop will stop when you do):")
 number = -1
 while number <= 0:
     number = int(input("Enter a positive number: "))
-
 print(f"You entered: {number} — good job!")
 
 # Infinite loop with break
@@ -31,7 +31,7 @@ while True:  # Infinite loop — will only stop when 'break' is called
     else:
         print(f"You typed: {user_input}")
 
-# While loop with else -----
+# Let's practice while looping with else statement
 print("\nCounting with while + else:")
 count = 0
 while count < 3:
