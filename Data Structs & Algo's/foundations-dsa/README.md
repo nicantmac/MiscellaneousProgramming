@@ -1,14 +1,8 @@
 # Foundations of Data Structures & Algorithms 📚
 
 ### Overview
-
-This repo contains my personal notes and examples, and practice problems for learning and reinforcing core **Data Structures and Algorithms (DSA)** concepts.
-
-It is structured as a collection of folders organized by topic — each containing relevant code snippets and explanations.
-
-This is a **learning-in-progress** repo that I use to review, practice, and build intuition for both technical interviews and academic understanding.
-
----
+Personal notes with examples and explanations, and practice problems organized by topic, for learning and reinforcing core **Data Structures and Algorithms (DSA)** concepts. Repo is like a reference library to review, practice, and build an intuition for both technical interviews and academic understanding.
+<hr>
 
 ### Topics Covered
 
@@ -32,15 +26,6 @@ This is a **learning-in-progress** repo that I use to review, practice, and buil
 | sorting                  | Sorting algorithms and implementations |
 | strings                  | String manipulation techniques         |
 | time-complexity          | Time complexity examples and notes     |
-
-
-## Purpose
-
-✅ Build a solid foundation in **DSA fundamentals**  
-✅ Prepare for **coding interviews**  
-✅ Improve understanding of **algorithmic efficiency**  
-✅ Maintain a personal **reference library** of clean example code  
-
 
 ## Notes
 
