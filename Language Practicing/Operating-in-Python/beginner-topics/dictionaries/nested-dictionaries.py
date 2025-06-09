@@ -23,5 +23,3 @@ for student_id, student_info in students.items():
     print(f"\n{student_id}:")
     for key, value in student_info.items():
         print(f"  {key}: {value}")
-
-print("\n== END OF DEMO ==")
