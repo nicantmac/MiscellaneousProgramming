@@ -1,8 +1,8 @@
 # Foundations of Data Structures & Algorithms 📚
 
-## Overview
+### Overview
 
-This repository contains my personal notes, code examples, and practice problems for learning and reinforcing core **Data Structures and Algorithms (DSA)** concepts.
+This repo contains my personal notes and examples, and practice problems for learning and reinforcing core **Data Structures and Algorithms (DSA)** concepts.
 
 It is structured as a collection of folders organized by topic — each containing relevant code snippets and explanations.
 
@@ -10,7 +10,7 @@ This is a **learning-in-progress** repo that I use to review, practice, and buil
 
 ---
 
-## Topics Covered
+### Topics Covered
 
 - 📏 **Asymptotic Notations** (Big O, Big Theta, Big Omega)
 - ⏳ **Time Complexity** analysis
