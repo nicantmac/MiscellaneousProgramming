@@ -26,12 +26,12 @@ print("reverse():", lst)
 print("count(1):", lst.count(1))
 
 # Dictionary methods
-d = {"a": 1, "b": 2}
+inventory = {"json": "data", "AWS": "cloud-computing", "Microsoft": "Windows 10"}
 
 print("\nDictionary methods:")
-print("keys():", d.keys())
-print("values():", d.values())
-print("items():", d.items())
+print("keys():", inventory.keys())  # #This returns a view of all the key in the dictionary as a list
+print("values():", inventory.values())  #This returns a view of all the values in the dictionary as a list
+print("items():", inventory.items())  # This returns a view of all the key-value pairs as tuples
 
 # Set methods
 s1 = {1, 2, 3}
