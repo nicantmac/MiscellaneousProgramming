@@ -1,4 +1,3 @@
-# dict_builtins_methods_demo.py
 # Demonstrating built-in functions and dictionary methods in Python
 
 # Sample dictionary
