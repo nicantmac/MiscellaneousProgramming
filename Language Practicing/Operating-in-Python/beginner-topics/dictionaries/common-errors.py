@@ -1,9 +1,11 @@
-print("\n--- Common Errors with Dictionaries ---")
-print("\n1️⃣ KeyError example:")
+# Here is a simple dictionary where we will manipulate it in different ways
+
+# In Python, a KeyError is an exception that occurs when trying to access an item in a dictionary where it does not exist
+print("\nKeyError example: ")
 try:
     print(my_dict["country"])  # KeyError → "country" is not a key
 except KeyError:
-    print("❌ KeyError caught! 'country' key does not exist.")
+    print("KeyError caught! 'country' key does not exist.")
 
 print("\n2️⃣ ValueError example:")
 try:
