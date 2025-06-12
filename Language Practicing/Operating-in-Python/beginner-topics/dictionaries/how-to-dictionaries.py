@@ -1,12 +1,5 @@
-# dict_errors_demo.py
-# Demonstrating common dictionary errors in Python
-
 # Here is a simple dictionary where we will manipulate it in different ways
-my_dict = {
-    "name": "Alice",
-    "age": 25,
-    "city": "New York"
-}
+my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 print(my_dict)
 
 # To print an specific value, simply type the key in the dictionary
