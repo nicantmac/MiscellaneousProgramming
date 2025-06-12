@@ -1,4 +1,3 @@
-# dict_looping.py
 # Looping through a dictionary
 
 my_dict = {
