@@ -1,4 +1,4 @@
-# Here is practice on demonstrating built-in functions and dictionary methods in Python
+# Here is practice on demonstrating built-in functions in Python
 # The dictionary below is what's going to be manipulated
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 
