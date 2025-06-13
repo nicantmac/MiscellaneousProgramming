@@ -1,10 +1,5 @@
-# Looping through a dictionary
-
-my_dict = {
-    "name": "Eve",
-    "age": 22,
-    "city": "Chicago"
-}
+# Here is a simple dictionary where we will manipulate it in different ways by looping
+my_dict = {"name": "Eve", "age": 22, "city": "Chicago"}
 
 # Loop through keys
 print("\nKeys:")
