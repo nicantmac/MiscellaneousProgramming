@@ -1,4 +1,3 @@
-# nested_function_tutorial.py
 # How to define and use nested functions in Python
 
 # --- Basic nested function ---
