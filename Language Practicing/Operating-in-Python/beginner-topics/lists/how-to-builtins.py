@@ -1,45 +1,34 @@
-# how-to-builtins.py
-# ----------------------------------------
-# Common Built-in Functions in Python
-# ----------------------------------------
+# Practice with the common built-in functions in Python
 
-# 1️⃣ len() → returns length of object
-
+# The len() function returns length of objects
 my_list = [1, 2, 3, 4]
-print(f"Length of list: {len(my_list)}")
+print(f"Length of list: {len(my_list)}")  # Output: Length of list: 4
 
-# 2️⃣ type() → returns type of object
-
+# The type() function returns type of objects
 x = 42
-print(f"Type of x: {type(x)}")
+print(f"Type of x: {type(x)}")  # Output: Type of x: <class 'int'>
 
-# 3️⃣ int(), float(), str() → type conversion
-
+# The int(), float(), str() function does type conversions
 my_str = "123"
 my_int = int(my_str)
-print(f"String to integer: {my_int}")
+print(f"String to integer: {my_int}")  # Output: String to integer: 123
 
-# 4️⃣ sorted() → returns a new sorted list
-
+# The sorted() function returns a new sorted list
 numbers = [4, 2, 9, 1]
 sorted_numbers = sorted(numbers)
-print(f"Sorted list: {sorted_numbers}")
+print(f"Sorted list: {sorted_numbers}")  # Output: Sorted list: [1, 2, 4, 9]
 
-# 5️⃣ sum() → sum of iterable
-
+# The sum() function sums of iterable objects
 total = sum([1, 2, 3, 4, 5])
-print(f"Sum of list: {total}")
+print(f"Sum of list: {total}")  # Output: Sum of list: 15
 
-# 6️⃣ max(), min() → max/min element
+# The max() & min() function take the max/min of an element
+print(f"Max: {max(numbers)}")  # Output: Max: 9
+print(f"Min: {min(numbers)}")  # Output: Min: 1
 
-print(f"Max: {max(numbers)}")
-print(f"Min: {min(numbers)}")
-
-# 7️⃣ range() → generate range of numbers
-
+# The range() function generates a range of numbers
 for i in range(5):
-    print(f"Range number: {i}")
+    print(f"Range number: {i}")  # Output: Range number: (each number in loop)
 
-# 8️⃣ abs() → absolute value
-
-print(f"Absolute value of -7: {abs(-7)}")
+# The abs() function retrieves the absolute value
+print(f"Absolute value of -7: {abs(-7)}")  # Output: Absolute value of -7: 7
