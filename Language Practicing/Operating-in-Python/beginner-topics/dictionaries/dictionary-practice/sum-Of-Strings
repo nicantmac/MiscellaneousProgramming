@@ -1,0 +1,26 @@
+'''
+PROMPT: Write a function sum_of_number_strings() that takes in a list of number strings (e.g., ["10", "20", "30"])
+and returns the total sum as an integer.
+
+Expected Output:
+For ["10", "20", "30"] → 60
+'''
+
+
+# METHOD 1: Convert each string to int using a loop (beginner-friendly)
+def sum_of_number_strings_manual(nums):
+    total = 0  # Start with 0
+    for num in nums:
+        total += int(num)  # Convert each string to int and add
+    return total
+
+# METHOD 2: More Pythonic using sum() and a generator expression
+def sum_of_number_strings_efficient(nums):
+    return sum(int(num) for num in nums)
+    
+
+if __name__ == '__main__':
+    nums = ["10", "20", "30"]
+
+    print("Manual Method:", sum_of_number_strings_manual(nums))        # Output: 60
+    print("Efficient Method:", sum_of_number_strings_efficient(nums))  # Output: 60
