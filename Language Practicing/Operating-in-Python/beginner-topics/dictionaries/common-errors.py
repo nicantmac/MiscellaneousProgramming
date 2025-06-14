@@ -4,8 +4,7 @@ my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 
 # ----- Notes/Reminders -----
 # Using try and except error blocks will help so that errors don't crash the program.
-#
-# ------------
+
 
 # In Python, a KeyError is an exception that occurs when trying to access an item in a dictionary where it does not exist
 print("\nKeyError example: ")
