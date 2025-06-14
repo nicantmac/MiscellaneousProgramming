@@ -28,7 +28,7 @@ for key, value in my_dict.items():
 
 
 # Safe example of looping (copy keys first):
-print("\n✅ Safe way to modify dict during iteration:")
+print("\nSafe way to modify dict during iteration:")
 for key in list(my_dict.keys()):
     if key == "city":
         my_dict["country"] = "USA"
