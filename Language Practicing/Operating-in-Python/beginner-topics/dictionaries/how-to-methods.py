@@ -2,8 +2,6 @@
 # The dictionary below is what's going to be manipulated
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
 
-# --- DICT METHODS ---
-
 # .keys() -> view keys
 print("keys():", my_dict.keys())
 
