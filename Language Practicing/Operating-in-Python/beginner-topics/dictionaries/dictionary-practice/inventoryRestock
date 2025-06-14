@@ -1,0 +1,21 @@
+current_inventory = {
+    "apples": 30,
+    "bananas": 15,
+    "oranges": 10
+}
+
+restock_list = {
+    "oranges": 20,
+    "apples": 10,
+    "pears": 5
+}
+
+def restock_inventory(current_inventory, restock_list):
+    for item, amount in restock_list.items():
+        if item in current_inventory:
+            current_inventory[item] += amount
+        else:
+            current_inventory[item] = amount
+    return current_inventory
+
+print(restock_inventory(current_inventory, restock_list))
