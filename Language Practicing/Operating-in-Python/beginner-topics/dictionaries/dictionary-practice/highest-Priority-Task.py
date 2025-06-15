@@ -38,7 +38,7 @@ def get_highest_priority_task_efficient(tasks):
     del tasks[top_task]
     return top_task
 
-# Test block
+
 if __name__ == '__main__':
     tasks = {
         "task1": 8,
