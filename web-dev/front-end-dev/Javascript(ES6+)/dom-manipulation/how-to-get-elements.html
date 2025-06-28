@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Elements</title>
+</head>
+<body>
+  <h1 id="main-title">Hello</h1>
+  <p class="description">This is a paragraph.</p>
+  <div data-role="box">Box element</div>
+
+  <script>
+    // By ID
+    const title = document.getElementById("main-title");
+    console.log("By ID:", title);
+
+    // By class
+    const desc = document.querySelector(".description");
+    console.log("By class:", desc);
+
+    // By attribute
+    const box = document.querySelector('[data-role="box"]');
+    console.log("By attribute:", box);
+  </script>
+</body>
+</html>
