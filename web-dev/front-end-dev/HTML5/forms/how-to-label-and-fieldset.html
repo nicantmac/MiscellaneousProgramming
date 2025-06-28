@@ -1,0 +1,41 @@
+<!-- how-to-label-and-fieldset.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labels and Fieldsets</title>
+</head>
+<body>
+
+  <h1>Grouped Form Sections</h1>
+
+  <form>
+    <!-- Fieldset groups related fields -->
+    <fieldset>
+      <legend>Personal Info</legend>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Login Info</legend>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+    </fieldset>
+
+    <br>
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
