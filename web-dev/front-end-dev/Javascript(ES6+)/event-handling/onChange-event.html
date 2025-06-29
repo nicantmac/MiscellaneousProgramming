@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>onchange Event Demo</title>
+</head>
+<body>
+  <h2>onchange with a dropdown</h2>
+  <label for="difficulty">Choose a difficulty:</label>
+  <select id="difficulty">
+    <option value="">-- Select --</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+  <p id="dropdownResult"></p>
+
+  <hr>
+
+  <h2>onchange with a text input</h2>
+  <label for="username">Enter your name:</label>
+  <input type="text" id="username" />
+  <p id="inputResult"></p>
+
+  <script>
+    const difficulty = document.getElementById("difficulty");
+    const dropdownResult = document.getElementById("dropdownResult");
+
+    difficulty.onchange = () => {
+      dropdownResult.textContent = `You selected: ${difficulty.value}`;
+    };
+
+    const username = document.getElementById("username");
+    const inputResult = document.getElementById("inputResult");
+
+    username.onchange = () => {
+      inputResult.textContent = `Hello, ${username.value}`;
+    };
+  </script>
+</body>
+</html>
