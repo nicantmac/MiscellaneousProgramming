@@ -1,0 +1,73 @@
+<!-- drag-drop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop Demo</title>
+  <style>
+    #draggable {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: move;
+    }
+
+    #dropzone {
+      margin-top: 20px;
+      width: 200px;
+      height: 120px;
+      border: 2px dashed gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #dropzone.dragover {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Drag and Drop</h1>
+
+  <div id="draggable" draggable="true">Drag me</div>
+
+  <div id="dropzone">Drop here</div>
+
+  <script>
+    const dragItem = document.getElementById("draggable");
+    const dropzone = document.getElementById("dropzone");
+
+    dragItem.addEventListener("dragstart", (e) => {
+      console.log("Drag started");
+      e.dataTransfer.setData("text/plain", dragItem.id);
+    });
+
+    dropzone.addEventListener("dragover", (e) => {
+      e.preventDefault(); // Required to allow drop
+      dropzone.classList.add("dragover");
+    });
+
+    dropzone.addEventListener("dragleave", () => {
+      dropzone.classList.remove("dragover");
+    });
+
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const draggedId = e.dataTransfer.getData("text/plain");
+      const draggedElement = document.getElementById(draggedId);
+      dropzone.textContent = "Dropped: " + draggedElement.textContent;
+      dropzone.classList.remove("dragover");
+    });
+
+    dragItem.addEventListener("dragend", () => {
+      console.log("Drag ended");
+    });
+  </script>
+</body>
+</html>
