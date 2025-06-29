@@ -1,0 +1,28 @@
+<!-- interactive-list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive List</title>
+</head>
+<body>
+  <input id="itemInput" placeholder="Add item" />
+  <button onclick="addItem()">Add</button>
+  <ul id="list"></ul>
+
+  <script>
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value.trim();
+      if (value === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = value;
+
+      li.addEventListener("click", () => li.remove());
+      document.getElementById("list").appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
