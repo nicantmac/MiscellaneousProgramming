@@ -3,3 +3,13 @@ This event is deprecated and should generally be avoided in modern web developme
 It only fired when a key that produced a character value was pressed. For example, pressing 'a' would 
 trigger keypress, but pressing 'Alt' would not. For capturing typed characters, the input event on input 
 fields is a more suitable and recommended alternative. 
+
+keydown:
+This event fires when a key is pressed down. It triggers for all keys, including character 
+keys (e.g., 'a', 'b', '1') and non-character keys (e.g., 'Shift', 'Alt', 'Ctrl', 'ArrowUp'). 
+The keydown event is often used for real-time interactions, such as initiating an action 
+while a key is held down.
+
+This event fires when a key that was previously pressed down is released. If a user 
+holds a key down continuously, the keydown event will fire repeatedly, but keyup will 
+only fire once when the key is finally released.
