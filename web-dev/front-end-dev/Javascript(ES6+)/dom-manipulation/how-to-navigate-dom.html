@@ -1,0 +1,21 @@
+<!-- how-to-navigate-dom.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigate DOM</title>
+</head>
+<body>
+  <div id="container">
+    <p id="first">First Paragraph</p>
+    <p id="second">Second Paragraph</p>
+    <p id="third">Third Paragraph</p>
+  </div>
+  <script>
+    const second = document.getElementById("second");
+    console.log("Parent:", second.parentElement);
+    console.log("Previous:", second.previousElementSibling);
+    console.log("Next:", second.nextElementSibling);
+  </script>
+</body>
+</html>
