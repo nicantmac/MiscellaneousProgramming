@@ -1,0 +1,32 @@
+<!-- highlight-search.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Highlight Search</title>
+  <style>
+    mark { background: yellow; }
+  </style>
+</head>
+<body>
+  <input id="search" placeholder="Type to highlight...">
+  <p id="text">JavaScript is fun and flexible. Learn JavaScript today!</p>
+
+  <script>
+    const input = document.getElementById("search");
+    const paragraph = document.getElementById("text");
+    const originalText = paragraph.textContent;
+
+    input.addEventListener("input", () => {
+      const query = input.value.trim();
+      if (query === "") {
+        paragraph.innerHTML = originalText;
+        return;
+      }
+
+      const regex = new RegExp(`(${query})`, "gi");
+      paragraph.innerHTML = originalText.replace(regex, "<mark>$1</mark>");
+    });
+  </script>
+</body>
+</html>
