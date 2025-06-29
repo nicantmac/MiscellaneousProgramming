@@ -1,0 +1,25 @@
+<!-- how-to-change-style.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Style</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p id="para">Watch me change!</p>
+  <button onclick="changeStyle()">Toggle Style</button>
+
+  <script>
+    const para = document.getElementById("para");
+    function changeStyle() {
+      para.classList.toggle("highlight");
+    }
+  </script>
+</body>
+</html>
