@@ -9,24 +9,37 @@
 
   <h1>Contact Us</h1>
 
+  <!-- Form element that sends data to '/submit-form' using POST method -->
   <form action="/submit-form" method="POST">
+  
+    <!-- Name input field -->
     <p>
+      <!-- Label for the name input -->
       <label for="name">Name:</label><br>
+      <!-- Text input field with matching id and name -->
       <input type="text" id="name" name="name">
     </p>
-
+  
+    <!-- Email input field -->
     <p>
+      <!-- Label for the email input -->
       <label for="email">Email:</label><br>
+      <!-- Email input for validation of email format -->
       <input type="email" id="email" name="email">
     </p>
-
+  
+    <!-- Message textarea field -->
     <p>
+      <!-- Label for the message textarea -->
       <label for="message">Message:</label><br>
+      <!-- Multi-line text box with 5 rows and 30 columns -->
       <textarea id="message" name="message" rows="5" cols="30"></textarea>
     </p>
-
+  
+    <!-- Submit button that sends the form -->
     <button type="submit">Send</button>
   </form>
+
 
 </body>
 </html>
