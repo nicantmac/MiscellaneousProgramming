@@ -1,4 +1,3 @@
-# classes_tutorial.py
 # Basic tutorial on defining and using classes in Python
 
 # --- Defining a simple class ---
