@@ -1,5 +1,15 @@
 <!-- Here we will work with how to add imgaes to the DOM -->
 
+<!--  ---| Notes |---
+The target attribute in HTML defines where a linked document will open when a user clicks on a link (<a> tag)
+
+target="_self":	Default — opens the link in the same tab or window
+target="_blank": Opens the link in a new tab or window
+target="_parent": Opens in the parent frame (used with nested frames, rarely used now)
+target="_top": Opens in the full browser window, breaking out of any frames
+framename: Opens the link in a specific named iframe (used when working with <iframe> elements)
+-->
+
 <!-- Let's of course start with the header -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +24,17 @@
   <!-- Basic image -->
   <img src="https://via.placeholder.com/150" alt="Placeholder image">
 
-  <!-- Image with width/height -->
-  <p>
+  <!-- Instead of width and height in the CSS, the width/height embedded here -->
+  <p> 
+    <!-- src: the image URL, width: sets the display width to 300 pixels, height: sets the display height to 100 pixels
+         alt: alternative text shown if image fails to load or for screen readers -->
     <img src="https://via.placeholder.com/300x100" width="300" height="100" alt="Custom size image">
   </p>
 
   <!-- Image inside a link -->
   <p>
+    <!-- <a>: is an Anchor tag that links sites i.e. Wikipedia
+         href: stands for Hypertext REFerence, used in <a> tags to define the destination URL of the link -->
     <a href="https://www.wikipedia.org/">
       <img src="https://via.placeholder.com/100" alt="Wikipedia Logo">
     </a>
