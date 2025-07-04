@@ -3,8 +3,6 @@
 <!--  ---| Notes |---
 The target attribute in HTML defines where a linked document will open when a user clicks on a link (<a> tag)
 
-target="_self":	Default — opens the link in the same tab or window
-target="_blank": Opens the link in a new tab or window
 target="_parent": Opens in the parent frame (used with nested frames, rarely used now)
 target="_top": Opens in the full browser window, breaking out of any frames
 framename: Opens the link in a specific named iframe (used when working with <iframe> elements)
@@ -21,17 +19,24 @@ framename: Opens the link in a specific named iframe (used when working with <if
 
   <h1>HTML Links</h1>
 
-  <!-- Basic link -->
+  <!-- Here is how to create a basic link
+       <a> tags: anchor tags are utilized to create hyperlinks in the DOM
+       href: stands for Hypertext REFerence, used in <a> tags to define the destination URL of the link 
+       Optional: you can type target="_self", it opens the link in the same tab or window but redundant cause it's Default -->
   <p><a href="https://www.google.com">Visit Google</a></p>
 
   <!-- To open links in a new tab 
        target="_blank": Opens the link in a new tab or window -->
   <p><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs (opens in new tab)</a></p>
 
-  <!-- Email link -->
+  <!-- To create an href to email links 
+       the 'mailto:' keyword will open the user's default email app 
+       and fill in the 'To' field with the provided address -->
   <p><a href="mailto:example@example.com">Email Us</a></p>
 
-  <!-- Phone link -->
+  <!-- To create an href to an Phone link 
+       the 'tel:' keyword will prompt the user to call the number 
+       this works mostly on mobile devices and some desktop app -->
   <p><a href="tel:+1234567890">Call Us</a></p>
 
   <!-- Internal link -->
