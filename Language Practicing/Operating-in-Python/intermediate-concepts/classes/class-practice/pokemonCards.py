@@ -10,3 +10,4 @@ class Pokemon:
     print(f"My rank is {self.rank}")
 
 pokemon1 = Pokemon("Charizard", "Ultra")
+pokemon2 = Pokemon("Bulbasaur", "Master")
