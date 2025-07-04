@@ -1,3 +1,15 @@
+<!-- Here we will work with how to create links in the DOM -->
+
+<!--  ---| Notes |---
+The target attribute in HTML defines where a linked document will open when a user clicks on a link (<a> tag)
+
+target="_self":	Default — opens the link in the same tab or window
+target="_blank": Opens the link in a new tab or window
+target="_parent": Opens in the parent frame (used with nested frames, rarely used now)
+target="_top": Opens in the full browser window, breaking out of any frames
+framename: Opens the link in a specific named iframe (used when working with <iframe> elements)
+-->
+
 <!-- how-to-create-links.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +24,8 @@
   <!-- Basic link -->
   <p><a href="https://www.google.com">Visit Google</a></p>
 
-  <!-- Open in new tab -->
+  <!-- To open links in a new tab 
+       target="_blank": Opens the link in a new tab or window -->
   <p><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs (opens in new tab)</a></p>
 
   <!-- Email link -->
