@@ -1,14 +1,8 @@
 <!-- Here we will work with how to create links in the DOM -->
 
 <!--  ---| Notes |---
-The target attribute in HTML defines where a linked document will open when a user clicks on a link (<a> tag)
+framename: Opens the link in a specific named iframe (used when working with <iframe> elements) -->
 
-target="_parent": Opens in the parent frame (used with nested frames, rarely used now)
-target="_top": Opens in the full browser window, breaking out of any frames
-framename: Opens the link in a specific named iframe (used when working with <iframe> elements)
--->
-
-<!-- how-to-create-links.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +19,14 @@ framename: Opens the link in a specific named iframe (used when working with <if
        Optional: you can type target="_self", it opens the link in the same tab or window but redundant cause it's Default -->
   <p><a href="https://www.google.com">Visit Google</a></p>
 
+  <!-- Used href to link to Coursera website
+       target="_parent": Opens in the parent frame (used with nested frames, rarely used now) -->
+  <p><a href="https://www.coursera.org" target="_parent">Visit Coursera</a></p>
+
+  <!-- Used href to link to w3schools website
+       target="_top": Opens in the full browser window, breaking out of any frames -->
+  <p><a href="https://www.w3schools.com" target="_top">Visit Coursera</a></p>
+  
   <!-- To open links in a new tab 
        target="_blank": Opens the link in a new tab or window -->
   <p><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs (opens in new tab)</a></p>
