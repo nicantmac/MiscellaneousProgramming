@@ -1,25 +1,57 @@
+<!-- Here you will understand how to retrieve elements in the DOM -->
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Get Elements</title>
 </head>
+  
 <body>
-  <h1 id="main-title">Hello</h1>
-  <p class="description">This is a paragraph.</p>
+  <h1 id="main-title">Welcome to Clash Royale!</h1>
+  <p class="game-text">The arena is your battle field!</p>
+  <p class="game-text">Wait to see your opponent's moves, don't rush your attacks!</p>
   <div data-role="box">Box element</div>
 
-  <script>
-    // By ID
+  <script> // Within this <script> tag, we can write JS here without importing it
+    
+    /* By ID: use the .getElementById() method to retrieve that element
+    So console.log() will output the following:
+    - the tag (<h1>)
+    - the id
+    - the inner text (Welcome to Clash Royale!)
+    */
     const title = document.getElementById("main-title");
-    console.log("By ID:", title);
+    console.log("By ID:", title); // Output: By ID: <h1 id="main-title">Welcome to Clash Royale!</h1>
 
-    // By class
-    const desc = document.querySelector(".description");
-    console.log("By class:", desc);
+    /* By class: use the .getElementByClassName() method to retrieve that element
+    So console.log() will output the following:
+    - the tag (<p>)
+    - the class name
+    - the inner text (The arena is your battle field!)
+    */
+    const gameDesc = document.getElementsByClassName("game-text");
+    console.log("By class:", gameDesc); // Output: By class: <p class="game-text">The arena is your battle field!</p>
 
-    // By attribute
-    const box = document.querySelector('[data-role="box"]');
-    console.log("By attribute:", box);
+    /* For ID & Class: use the .querySelector() method to retrieve that element (works both for ID and class)
+    So console.log() will output the following:
+    - grabs the first occurrence of that ID, class or attribute 
+    - the ID, class, or attribute name
+    - the inner text (The arena is your battle field!)
+    */
+    const grabbed = document.querySelector("game-text");
+    console.log("Element retrieved:", grabbed);
+
+
+    /* For ID & Class: use the .querySelectorAll() method to retrieve all elements (works both for ID and class)
+    So console.log() will output the following:
+    - grabs the every occurrence of that ID, class or attribute 
+    - the ID, class, or attribute name
+    - the inner text for every game-text
+    */
+    const allGameText = document.querySelectorAll();
+    allBoxes.forEach(text => {
+      console.log(text.textContent);
+    });
   </script>
 </body>
 </html>
