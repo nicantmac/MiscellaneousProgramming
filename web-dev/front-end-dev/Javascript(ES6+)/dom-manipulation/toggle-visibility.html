@@ -1,19 +1,26 @@
-<!-- toggle-visibility.html -->
+<!-- Here we will understand toggling the visibility of an element -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Toggle Visibility</title>
-  <style>
+  
+  <style> /* CSS class to hide an element */
     .hidden { display: none; }
   </style>
 </head>
+  
 <body>
+  <!-- Button that triggers the toggle function when clicked -->
   <button onclick="toggleBox()">Toggle Box</button>
+  
+  <!-- Box starts visible and has an ID so JS can target it -->
   <div id="box" style="margin-top: 10px; background: pink; padding: 10px;">Hello, I’m visible!</div>
 
   <script>
+    // Created a function to show/hide the box when the button is clicked
     function toggleBox() {
+      // get the element by its ID
       document.getElementById("box").classList.toggle("hidden");
     }
   </script>
