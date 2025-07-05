@@ -1,14 +1,14 @@
-# window vs document in JavaScript
+# Window vs Document in JavaScript
 
-## What is window?
+#### What is `window`?
 - Represents the browser window/tab
 - Global scope in JS
 
-## What is document?
+#### What is `document`?
 - Represents the loaded HTML DOM
 - Part of `window`
 
-## Key Differences
+### Key Differences
 | Feature         | window           | document        |
 |-----------------|------------------|-----------------|
 | Global object   | ✅              | ❌              |
