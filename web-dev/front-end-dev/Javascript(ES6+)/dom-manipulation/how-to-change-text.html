@@ -1,1 +1,22 @@
-fdds
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text</title>
+</head>
+<body>
+
+  <!-- Text to be changed -->
+  <p id="message">Original message.</p>
+
+  <!-- Button triggers text change -->
+  <button onclick="changeText()">Change Text</button>
+
+  <script>
+    function changeText() {
+      const msg = document.getElementById("message");
+      msg.textContent = "The message has been updated!";
+    }
+  </script>
+
+</body>
+</html>
