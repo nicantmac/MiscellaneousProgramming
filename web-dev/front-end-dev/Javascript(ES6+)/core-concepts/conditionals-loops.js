@@ -29,10 +29,23 @@ while (count < 2) {
 }
 
 // forEach() is an array method
-const cards = ["Knight", "Archer", "Giant"]; 
+const smallCards = ["goblins", "Archer", "fire spirit"]; 
 
 // for the array of cards, let's use forEach() to output each card
 // inside forEach(), use an function or arrow function to perform an action
 cards.forEach(function(card) {
   console.log("Card:", card);
 });
+
+// How for looping differs from  the forEach() array method
+const evolutionCards = ["Royal Giant", "Mega Knight", "P.E.K.K.A"];
+
+/* - let i = 0 --> will start loop at 0
+   - i < cards.length --> will stop loop at the length of cards
+   - i++ --> will increment the number by 1  */
+for (let i = 0; i < cards.length; i++) {
+  // because for loop, we can perform flexible actions i.e. continuea & break
+  if (cards[i] === "Giant") 
+    break; // if the current index = Giant, we'll use break to exit loop
+  console.log("Card:", cards[i]);
+}
