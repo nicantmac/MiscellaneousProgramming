@@ -1,12 +1,10 @@
 //Type coercion is when JavaScript automatically converts one data type to another during an operation.
 
-//Two Types:
-//Implicit coercion – JS converts behind your back 😅
-
-//Explicit coercion – you tell JS what to do
+/*  Two Types:
+  - Implicit coercion – JS converts behind your back
+  - Explicit coercion – you tell JS what to do  */
 
 // Implicit Coercion
-
 console.log("5" + 2);       // "52" (number 2 coerced to string)
 console.log("5" - 2);       // 3   (string "5" coerced to number)
 console.log(true + 1);      // 2   (true becomes 1)
