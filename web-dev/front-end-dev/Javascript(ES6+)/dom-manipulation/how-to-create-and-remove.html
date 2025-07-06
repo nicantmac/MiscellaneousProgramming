@@ -1,1 +1,33 @@
-svfdsv
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create & Remove Elements</title>
+</head>
+<body>
+
+  <!-- Container for new elements -->
+  <div id="container"></div>
+
+  <!-- Buttons to create and remove -->
+  <button onclick="createElement()">Create Element</button>
+  <button onclick="removeElement()">Remove Element</button>
+
+  <script>
+    let newElement;
+
+    function createElement() {
+      newElement = document.createElement("p"); // Create <p>
+      newElement.textContent = "I'm a new element!";
+      document.getElementById("container").appendChild(newElement);
+    }
+
+    function removeElement() {
+      if (newElement) {
+        newElement.remove(); // Remove the element
+        newElement = null;
+      }
+    }
+  </script>
+
+</body>
+</html>
