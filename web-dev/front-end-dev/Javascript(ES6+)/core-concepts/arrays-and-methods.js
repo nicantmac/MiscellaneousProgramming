@@ -42,9 +42,11 @@ console.log(cards.includes("Giant")); // true
 console.log(cards.includes("Fireball")); // false
 
 
-// 🔄 Create new array with changed values (non-destructive)
+/* Let's create a new array with changed values (non-destructive)
+   - Using .map(), return new array of elements
+   - for each index we return the Upper case of each element  */
 const upperCards = cards.map(card => card.toUpperCase());
-console.log("Mapped:", upperCards); // ["KNIGHT", "ARCHER", "GIANT"]
+console.log("Mapped:", upperCards); // Output: Mapped: ["KNIGHT", "ARCHER", "GIANT", "WIZARD"]
 
 
 /* To filter an array based on a condition, utilize the .filter() method 
