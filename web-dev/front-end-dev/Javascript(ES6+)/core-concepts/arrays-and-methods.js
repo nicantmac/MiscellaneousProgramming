@@ -36,7 +36,7 @@ if (found) {
 }
 
 
-/* - To check if array includes an item, utilize the .includes() method 
+/* To check if array includes an item, utilize the .includes() method 
    - It returns true or false depending if a string or an array contains a specified value  */
 console.log(cards.includes("Giant")); // true
 console.log(cards.includes("Fireball")); // false
@@ -68,14 +68,17 @@ const totalChars = addCards.reduce((sum, currentCard) => sum + currentCard.lengt
 console.log("Total characters:", totalChars); // Output: Total characters: 11
 
 
-// To sort an array alphabetically, utilize the .sort() method
+/* To sort an array alphabetically, utilize the .sort() method
+   - The ... is the the spread operator, its to expand the elements into a list format
+   - The .sort() method after the array will alphabetically order the elements  */
 const sorted = [...cards].sort();
-console.log("Sorted:", sorted); // ["Archer", "Giant", "Knight"]
+console.log("Sorted:", sorted); // Output: ["Archer", "Giant", "Knight", "Wizard"]
 
 
-// 🔁 Reverse order
+/* To simply reverse an order, utilize the .reverse() method
+   - using .reverse() on array will organize the array backwards  */
 const reversed = [...cards].reverse();
-console.log("Reversed:", reversed); // ["Giant", "Archer", "Knight"]
+console.log("Reversed:", reversed); // Output: ["Wizard", "Giant", "Archer", "Knight"]
 
 
 // 🎯 Slice (non-destructive)
@@ -88,5 +91,8 @@ cards.splice(1, 1, "Hunter");
 console.log("Spliced:", cards); // ["Knight", "Hunter", "Giant"]
 
 
-// 🧩 Join elements into a string
-console.log("Joined:", cards.join(", ")); // "Knight, Hunter, Giant"
+/* To join elements together, utilize the .join() method
+   - using .join() on an array will connect the elements together into a string
+   - Whatever you type in the parentheses will be placed between each element when they're joined  */
+let eliteCards = ["Royal Giant", "Mega Knight", "Archer Queen", "Monk"]
+console.log("Joined:", eliteCards.join(", ")); // Output: "Royal Giant, Mega Knight, Archer Queen, Monk"
