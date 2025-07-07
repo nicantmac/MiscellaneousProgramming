@@ -17,9 +17,15 @@
     // This is a window browser-level thing so we utilize window keyword
     window.alert("Battle phase initialized.");
 
-    // Same with checking screen size
+    /* - With checking screen size, .innerWidth returns the width of the viewport (excluding scrollbars)
+       - Most commonly used for responsive checks.  */
     if (window.innerWidth < 500) {
       alert("You’re on a small screen!");
+    }
+
+   /* - With checking screen size, .outerWidth returns the width of the webpage */
+    if (window.outerWidth) {
+         console.log("outer:", window.outerWidth);
     }
 
     // Another is scrolling in the window
