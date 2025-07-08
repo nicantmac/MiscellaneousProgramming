@@ -39,6 +39,7 @@ console.log(undefined + 1); // Output: NaN (undefined becomes NaN)
    the operation becomes: (false & object) === (false & undefined) = false  */
 console.log(null === undefined) // Output: false (different types, so strict equality fails)
 
+
 // Comparison coercion
 
 /* Loose equality (==), type coercion will prioritize value
@@ -72,11 +73,21 @@ console.log([] == ![]); // Output: true (wild one)
 console.log("0" == false); // Output: true
 
 // Explicit Coercion
-console.log(Number("42"));     // 42
-console.log(String(123));      // "123"
-console.log(Boolean("hello")); // true
-console.log(Boolean(""));      // false
+console.log(Number("42"));     // "42" - (string) becomes 42 (number)
+console.log(String(123));      // "123" - (number) becomes 123 (string)
+console.log(Boolean("hello")); // true - non-empty string results truthy
+console.log(Boolean(""));      // false - empty string results falsey
 
-// NaN check
-console.log(Number("abc"));    // NaN
-console.log(isNaN("abc"));     // true
+console.log(Number("abc"));    // Output: NaN - "abc" in JS cannot be converted to a number
+
+/* NaN checking (there are two different isNaN functions in JavaScript)
+   - isNaN() — Global function and Number.isNaN() — Stricter version
+   - Introduced in ES6 (modern JS) the .isNaN() method does not coerce, it only returns true if the value is actually NaN */
+
+/* - isNaN() is original and built-in global function
+   - It coerces the value to a number first, then checks if it’s NaN. */
+console.log(isNaN("abc")); // Output: true - isNan() returns strictly boolean values
+console.log(isNaN(true)); // Output: false (looking for Not-a-Number when true → 1, numeric one is a number)
+
+// .isNaN() method does not coerce, so "abc" is a string, not NaN
+console.log(Number.isNaN("abc")); // Output: false
