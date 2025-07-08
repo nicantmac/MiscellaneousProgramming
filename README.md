@@ -11,3 +11,7 @@ Personal repo where I keep:
 - `/dsa`: My algorithm/data structure practice
 - `/debugging`: Fixes, logs, and common bugs I’ve worked through
 - `/snippets`: Short reusable code chunks
+
+### Just genuinely trying to keep up
+![LooneyTunesDaffyGIF](https://github.com/user-attachments/assets/7b6e0f05-8150-4b2f-928c-7836e0e3a2e5)
+
