@@ -22,7 +22,7 @@ I'm exploring how to fetch, display, and manage data from APIs in different fron
 ### 📎Quick Copy and Paste links
 
 ##### 1. JSONPlaceholder – Fake user/posts data
-- <a href="https://jsonplaceholder.typicode.com/users" target="_blank">https://jsonplaceholder.typicode.com/users</a>
+- https://jsonplaceholder.typicode.com/users
 - https://jsonplaceholder.typicode.com/posts
 - https://jsonplaceholder.typicode.com/comments
 
