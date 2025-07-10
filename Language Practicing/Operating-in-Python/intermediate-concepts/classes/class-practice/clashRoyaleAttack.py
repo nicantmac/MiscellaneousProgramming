@@ -2,6 +2,7 @@
 
 # Below is object-to-object interaction, a core part of object-oriented programming (OOP)
 class ClashRoyale:
+    # init dunder method will construct and instantiate: a name, health points, and numeric damage
     def __init__(self, name, hp, damage):
         self.name = name
         self.hp = hp
