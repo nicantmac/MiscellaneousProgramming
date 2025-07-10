@@ -1,3 +1,6 @@
+# Practicing Object-oriented programming, but object-to-object interaction
+
+# Below is object-to-object interaction, a core part of object-oriented programming (OOP)
 class ClashRoyale:
     def __init__(self, name, hp, damage):
         self.name = name
@@ -11,7 +14,11 @@ class ClashRoyale:
         else:
             print(f"{opponent.name} is still alive! More damage to do")
 
+# miniPekka is a whole object — an instance of the class ClashRoyale
 miniPekka = ClashRoyale("mini p.e.k.k.a", 300, 150)
-RoyalGuard = ClashRoyale("electro wizard", 100, 20)
+# electroWizard is a whole object — an instance of the class ClashRoyale
+electroWizard = ClashRoyale("electro wizard", 100, 20)
 
-miniPekka.attack(RoyalGuard)
+# In OOP: methods can take other objects as input to interact with their properties
+miniPekka.attack(electroWizard)
+
