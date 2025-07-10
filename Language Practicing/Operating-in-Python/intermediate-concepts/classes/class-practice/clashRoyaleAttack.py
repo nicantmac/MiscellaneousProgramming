@@ -6,7 +6,9 @@ class ClashRoyale:
         self.name = name
         self.hp = hp
         self.damage = damage
-
+        
+    # Reminder: self = the current object doing the action (miniPekka)
+    # opponent = a completely separate object of the same class, passed in as an argument
     def attack(self, opponent):
         attacked = opponent.hp - self.damage
         if (attacked <= 0):
