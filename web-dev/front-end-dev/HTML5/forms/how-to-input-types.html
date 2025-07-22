@@ -1,4 +1,4 @@
-<!-- form-input-types.html -->
+<!-- Here we can understand better how input types function in HTML forms -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +10,37 @@
   <h1>HTML Input Types</h1>
 
   <form>
-    <p><label>Text: <input type="text" name="text"></label></p>
-    <p><label>Email: <input type="email" name="email"></label></p>
-    <p><label>Password: <input type="password" name="password"></label></p>
-    <p><label>Date: <input type="date" name="birthdate"></label></p>
-    <p><label>Number: <input type="number" name="quantity"></label></p>
-    <p><label>File Upload: <input type="file" name="resume"></label></p>
-    <p><label>Color Picker: <input type="color" name="color"></label></p>
-    <p><label>Range Slider: <input type="range" name="volume" min="0" max="10"></label></p>
-    <p><label>URL: <input type="url" name="website"></label></p>
-    <button type="submit">Submit</button>
-  </form>
+  <!-- Text input for general text, like a name or title -->
+  <p><label>Text: <input type="text" name="text"></label></p>
+
+  <!-- Email input that validates for a properly formatted email address -->
+  <p><label>Email: <input type="email" name="email"></label></p>
+
+  <!-- Password input hides characters for security -->
+  <p><label>Password: <input type="password" name="password"></label></p>
+
+  <!-- Date picker for selecting a date (e.g., birthdate) -->
+  <p><label>Date: <input type="date" name="birthdate"></label></p>
+
+  <!-- Number input allows only numeric values -->
+  <p><label>Number: <input type="number" name="quantity"></label></p>
+
+  <!-- File upload lets user choose and upload a file (e.g., resume) -->
+  <p><label>File Upload: <input type="file" name="resume"></label></p>
+
+  <!-- Color input opens a color picker dialog -->
+  <p><label>Color Picker: <input type="color" name="color"></label></p>
+
+  <!-- Range slider input from 0 to 10 (e.g., volume control) -->
+  <p><label>Range Slider: <input type="range" name="volume" min="0" max="10"></label></p>
+
+  <!-- URL input validates for a properly formatted web address -->
+  <p><label>URL: <input type="url" name="website"></label></p>
+
+  <!-- Submit button to send the form data -->
+  <button type="submit">Submit</button>
+</form>
+
 
 </body>
 </html>
