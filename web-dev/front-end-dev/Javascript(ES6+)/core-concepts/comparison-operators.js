@@ -4,8 +4,8 @@ let a = 5; // Initiate a number
 let b = "5"; // Initiate a string
 
 /* - (==) => loose equality: compares values stored after type coercion
-   - In JavaScript, string holds hierarchy, type coercion converts the number 5 into a string to match "5"  */
-console.log(a == b); // Type Coercion: "5" == "5", Output: true
+   - In JavaScript, numbers holds hierarchy, type coercion converts the string 5 into a number to match 5  */
+console.log(a == b); // Type Coercion: 5 == 5, Output: true
 
 /* - (===) => strict equality: compares values stored AND data types
    - In JavaScript, strict comparison is three characters length (i.e. checks if boolean and true)  */
