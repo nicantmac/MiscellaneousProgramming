@@ -1,0 +1,16 @@
+'''
+PROMPT: Write a function cast_vote() that records a vote for a candidate in an election.
+The function accepts:
+- votes: a dictionary mapping candidate names to their current vote counts
+- candidate: a string representing the candidate receiving a vote
+
+If the candidate exists, increment their vote count by 1.
+If the candidate does not exist, add them to the dictionary with 1 vote.
+
+Expected Output:
+votes = {"Alice": 5, "Bob": 3}
+cast_vote(votes, "Alice") -> {"Alice": 6, "Bob": 3}
+cast_vote(votes, "Gina")  -> {"Alice": 6, "Bob": 3, "Gina": 1}
+'''
+
+10%*700=70
