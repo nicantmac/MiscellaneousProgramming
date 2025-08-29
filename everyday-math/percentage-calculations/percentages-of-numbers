@@ -1,16 +1,16 @@
-'''
-PROMPT: Write a function cast_vote() that records a vote for a candidate in an election.
-The function accepts:
-- votes: a dictionary mapping candidate names to their current vote counts
-- candidate: a string representing the candidate receiving a vote
+Math Practice: Calculating the missing number from percentage
 
-If the candidate exists, increment their vote count by 1.
-If the candidate does not exist, add them to the dictionary with 1 vote.
+- Here let's calculate the missing number from given percent
 
-Expected Output:
-votes = {"Alice": 5, "Bob": 3}
-cast_vote(votes, "Alice") -> {"Alice": 6, "Bob": 3}
-cast_vote(votes, "Gina")  -> {"Alice": 6, "Bob": 3, "Gina": 1}
-'''
+- Real World Applications:
+    - Calculating numeric score from score percentage
+    - 
 
-10%*700=70
+Mathematical Work:
+  - Premise: Two Test grades; Student one(22%) and Student two(87%)  
+
+  Student one:
+  - 
+  - Part = (22 ÷ 100) × 77  
+     = 0.22 × 77  
+     = 16.94
