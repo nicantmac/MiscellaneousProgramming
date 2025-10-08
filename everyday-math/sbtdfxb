@@ -1,1 +1,15 @@
 int(num**0.5))
+The expression int(num**0.5) in Python calculates the integer part of the square root of a number.
+
+Here's a breakdown:
+`num 0.5`**: This part calculates the square root of num. The ** operator in Python performs 
+exponentiation, so num**0.5 is equivalent to num raised to the power of 0.5, which is the 
+square root. The result of this operation will be a floating-point number.
+
+Example: If num is 25, 25**0.5 would be 5.0. If num is 10, 10**0.5 would be approximately 3.162.
+
+int(...): This built-in Python function converts the result of the square root calculation 
+into an integer. When converting a floating-point number to an integer, int() truncates the 
+decimal part, effectively rounding down to the nearest whole number.
+
+Example: int(5.0) would be 5. int(3.162) would be 3.
