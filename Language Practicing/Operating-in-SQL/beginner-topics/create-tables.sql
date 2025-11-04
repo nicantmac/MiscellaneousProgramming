@@ -5,7 +5,9 @@ USE employed_DB;
 -- First to create tables utilize the keywords; CREATE TABLE
 -- After creating your table, add the columns you want
 CREATE TABLE  Employee_TABLE (
-    Employee_ID INT PRIMARY KEY,
+    -- created columns, initiated data types and constraints
+    -- created employee_id column, 
+    Employee_ID INT PRIMARY KEY, 
     FirstName VARCHAR(30) NOT NULL,
     LastName VARCHAR(30) NOT NULL,
     Department VARCHAR(35),
