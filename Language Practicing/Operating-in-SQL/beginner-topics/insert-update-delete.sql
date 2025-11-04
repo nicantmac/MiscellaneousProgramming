@@ -25,8 +25,9 @@ SELECT * FROM Employee_TABLE ORDER BY Employee_ID;
 
 -- UPDATE DATA
 -- Try updating by giving Engineering a 5% raise
-UPDATE Employee_TABLE
-SET Employee_Salary = Employee_Salary * 1.05
+
+UPDATE Employee_TABLE -- use UPDATE on the table
+SET Employee_Salary = Employee_Salary * 1.05 -- 
 WHERE Department = 'Engineering';
 
 -- 2) Move Eve into Sales and set a new salary
