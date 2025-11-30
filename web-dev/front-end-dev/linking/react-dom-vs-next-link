@@ -1,3 +1,5 @@
+title: SSR CSR SSG
+
 Here’s a clear breakdown of react-router-dom’s <Link> vs Next.js’s <Link> (from next/link) so you can decide which to use depending on your project.
 
 1. Purpose & Context
