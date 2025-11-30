@@ -44,13 +44,14 @@ Uses href prop.
 Automatically prefetches in production for faster navigation.
 
 3. Key Differences
-Feature	react-router-dom <Link>	next/link
-Routing Type	Client-side only	Hybrid (SSR, SSG, CSR)
-Prefetching	❌ No built-in prefetch	✅ Automatic prefetch in production
-File-based Routing	❌ Manual route definitions	✅ File-based routing from /pages or /app
-SEO	Limited (CSR only)	Strong (SSR/SSG support)
-Props	to, replace, state	href, prefetch, replace, scroll
-When to Use	Pure React SPA	Next.js projects
+Feature	            react-router-dom <Link>	      next/link
+Routing Type	      Client-side only	            Hybrid (SSR, SSG, CSR)
+Prefetching	        ❌ No built-in prefetch	      ✅ Automatic prefetch in production
+File-based Routing	❌ Manual route definitions	  ✅ File-based routing from /pages or /app
+SEO	                Limited (CSR only)	          Strong (SSR/SSG support)
+Props	              to, replace, state	          href, prefetch, replace, scroll
+When to Use	        Pure React SPA	              Next.js projects
+
 4. When to Choose Which
 If you’re in a Next.js project → Always use next/link to leverage SSR, SSG, and prefetching.
 If you’re in a plain React project → Use react-router-dom for SPA routing.
