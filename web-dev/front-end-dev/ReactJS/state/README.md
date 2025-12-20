@@ -1,4 +1,4 @@
-# 😁React State Patterns
+# React State Patterns
 
 This folder contains examples and patterns for managing `state in React`. Helpful reference while building real applications.
 
