@@ -1,16 +1,21 @@
-// Define a functional component named Homepage
+// We define functional components by typing 'export default' before function keyword
+// 'export default' allows us to reuse elsewhere
 function Homepage() { 
+
+  function handleClick = () => {
+      alert("You clicked the button!"); // showing alert when user clicks!
+  }
+
+  // return blocks primary job is telling React what the user interface structure should look like
   return ( 
-    // The component returns a single parent <div> to group the content
-    <div> 
-      {/* Renders a primary heading for the page */}
-      <h1>Welcome Home</h1> 
+    <main> 
+      <h1>Welcome Home</h1> {/* regular heading */}
+      <p>Welcome to the landing Home Page</p> {/* regular text */}
       
-      {/* Renders a paragraph containing the subtitle/description */}
-      <p>Welcome to the landing Home Screen</p> 
-    </div> 
+      <button type="button onClick={handleClick}>Click Me!</button>
+    </main> 
   ); 
 } 
 
-// Export the component so it can be imported and used in other files (like App.js)
+// 'export default' let's us use this somewhere else
 export default Homepage;
