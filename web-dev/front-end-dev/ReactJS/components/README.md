@@ -8,4 +8,3 @@ Each component is designed to be modular and reusable with minimal logic.
 
 - **Component Architecture:** Built using modern React functional component patterns.
 - **Pre-render Logic:** Includes a dedicated logic block for functions before the UI return.
-- **ES6+ Standards:** Uses clean export/import syntax.
