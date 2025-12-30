@@ -12,6 +12,8 @@ What is useEffect?
 useEffect runs after a component renders.
 It lets your component react to changes in state, props, or lifecycle events.
 
+There are only 3 valid patterns you will ever use in real React apps - 1️⃣ No dependency array, 2️⃣ Empty dependency array [], 3️⃣ Dependency array with values, 🔁 Multiple dependencies
+
 Basic syntax:
 
 useEffect(() => {
@@ -51,3 +53,17 @@ Rendering logic
 useEffect is for side effects, not rendering logic.
 
 If something can be derived directly from props or state — don’t put it in an effect.
+
+---
+🔍 Summary Table
+Dependency Array	Runs When
+None	Every render
+[]	Once (on mount)
+[value]	When value changes
+[a, b]	When a or b changes
+---
+🧠 Mental Model (Memorize This)
+
+useEffect runs after render,
+and reruns when anything in the dependency array changes.
+---
