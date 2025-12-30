@@ -22,6 +22,18 @@ useEffect(() => {
 ---
 explain runs once when the component mounts, Runs whenever a specific value changes, Demonstrates fetching data from an API, Shows how to clean up side effects like timers or subscriptions.
 ---
+Examples:
+
+Fetching data
+
+Logging something
+
+Setting up timers
+
+Subscribing / unsubscribing
+
+Syncing state with props or URL
+---
 🧠 Key Concepts
 Concept	Meaning
 Dependency Array	Controls when effect runs
