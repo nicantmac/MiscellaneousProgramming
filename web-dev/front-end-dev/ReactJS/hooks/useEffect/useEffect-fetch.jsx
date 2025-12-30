@@ -1,4 +1,4 @@
-
+// import the 'useEffect' & 'useState' hook from the react library to manage component state once rendered 
 import { useEffect, useState } from "react";
 
 // component that will display user fetched data
