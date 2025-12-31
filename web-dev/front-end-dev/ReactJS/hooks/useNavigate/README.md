@@ -8,6 +8,7 @@
 
 ```js
 import { useNavigate } from "react-router-dom";
+```
 
 🧠 When Should You Use useNavigate?
 Situation	Use
