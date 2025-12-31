@@ -8,9 +8,10 @@ function Login() {
   const navigate = useNavigate();
 
   function handleSubmit(e) {
-    e.preventDefault(); // prevent the browser from 
-    // login logic here
-    navigate("/dashboard");
+    // prevent the browser's default action -> (prevents page from reloading when a submit btn is clicked)
+    e.preventDefault();
+    // navigate is now a function that accepts a string guiding where to go (i.e. go to "/dashboard")
+    navigate("/dashboard"); 
   }
 
   return (
