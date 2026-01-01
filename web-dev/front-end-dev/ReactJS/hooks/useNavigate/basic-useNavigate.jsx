@@ -1,4 +1,4 @@
-// 
+// import useNavigate hook to programmatically change routes inside your application
 import { useNavigate } from "react-router-dom";
 
 // component for displaying data
