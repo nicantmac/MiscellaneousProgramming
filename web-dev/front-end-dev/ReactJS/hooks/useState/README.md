@@ -1,5 +1,5 @@
 # useState 
-`useState` a fundamental React Hook that lets functional components manage and store data **(state)** that can change over time.
+`useState` is a fundamental React Hook that lets functional components manage and store data **(state)** that can change over time.
  When updated, this triggers a re-render, which is crucial for dynamic UIs like counters or form inputs
 
 To use `useState()` in your React applications, **start with** importing useState from React library.
