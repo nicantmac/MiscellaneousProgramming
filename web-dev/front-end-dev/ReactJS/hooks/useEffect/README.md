@@ -1,7 +1,6 @@
-useEffect
+# useEffect
+```useEffect``` hook works in React. useEffect allows you to perform side effects in function components, such as:
 
-This folder contains examples demonstrating how the useEffect hook works in React. useEffect allows you to perform side effects in function components, such as:
----
 Fetching data
 Subscribing to events
 Updating the DOM
