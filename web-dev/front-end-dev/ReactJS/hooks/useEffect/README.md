@@ -1,5 +1,19 @@
 # useEffect
-```useEffect``` hook works in React. useEffect allows you to perform side effects in function components, such as:
+```useEffect``` is a fundamental React Hook that allows you to perform certain actions in function components after initial render from browser
+
+<br/>To use `useEffect()` in your React applications, **start with** importing useEffect from React library.
+```
+import { useEffect } from 'react';
+```
+
+## How it works?
+```
+export default function App() {
+   useEffect(() => {
+     // side effect logic
+   }, [dependencies]);
+}
+```
 
 Fetching data
 Subscribing to events
@@ -13,11 +27,6 @@ It lets your component react to changes in state, props, or lifecycle events.
 
 There are only 3 valid patterns you will ever use in real React apps - 1️⃣ No dependency array, 2️⃣ Empty dependency array [], 3️⃣ Dependency array with values, 🔁 Multiple dependencies
 
-Basic syntax:
-
-useEffect(() => {
-  // side effect logic
-}, [dependencies]);
 ---
 explain runs once when the component mounts, Runs whenever a specific value changes, Demonstrates fetching data from an API, Shows how to clean up side effects like timers or subscriptions.
 ---
