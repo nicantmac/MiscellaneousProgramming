@@ -14,8 +14,10 @@ function Counter() {
     console.log('Button clicked', clickCount.current, 'times'); // log current value
   };
 
-  return( 
-    <h1>Button Counter Page</h1>
-    <button onClick={handleClick}>Click Me (check console)</button>
+  return ( 
+    <div>
+      <h1>Button Counter Page</h1>
+      <button onClick={handleClick}>Click Me (check console)</button>
+    </div>
   );
 }
