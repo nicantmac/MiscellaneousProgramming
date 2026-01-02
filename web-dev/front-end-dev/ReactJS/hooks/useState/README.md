@@ -3,7 +3,7 @@
  When updated, this triggers a re-render, which is crucial for dynamic UIs like counters or form inputs
 
 To use `useState()` in your React applications, **start with** importing useState from React library.
-```bash
+```
 import { useState } from 'react';
 ```
 
@@ -14,13 +14,7 @@ export default function App() {
   // ...
 }
 ```
-```useState``` returns it returns a two-element array: (state) & (function) respectively
-state: stores the current state/data, setState: a function to update state/data
-
-
-## Files
-- `BasicCounter.jsx` – numeric state updates
-- `ToggleBoolean.jsx` – boolean toggling
-- `InputControlled.jsx` – controlled form inputs
-
-These examples focus on understanding state updates, not app structure.
+**```useState()```** returns it returns a two-element array: (state) & (function) respectively <br/>
+-→ state: stores the current state/data <br/>
+-→ setState: a function to update state/data
+-→ useState(initialValue): calling useState() & setting an initial value 
