@@ -17,7 +17,7 @@ function Counter() {
   return ( 
     <div>
       <h1>Button Counter Page</h1>
-      <button onClick={handleClick}>Click Me (check console)</button>
+      <button onClick={handleClick}>Open console & click btn</button>
     </div>
   );
 }
