@@ -1,87 +1,67 @@
 # createContext() & useContext()
-both these together allows components deep in the component tree to access values provided by a prior or parent component.
+```createContext()``` and ```useContext()``` work together to let **deeply nested React components access shared data** without passing props through every level of the component tree.
+<br/><br/>
 
+To use ```createContext()``` &  ```useContext()``` in your React applications, start with importing both from React library.
 ```javascript
-const { user, setUser } = useContext(UserContext);
-🔹 What is useContext?
-useContext is a React Hook that lets a component access shared data from a Context without passing props manually.
+import { createContext, useContext } from 'react';
 ```
 
-It allows components deep in the tree to read values provided by a parent component.
+## How it works?
+```javascript
+import { createContext, useContext } from 'react';
 
-🔹 What is UserContext?
-js
-Copy code
+// 1. Create the Context via createContext() 
 const UserContext = createContext();
-UserContext is a context object created by React.
-It represents a shared data channel.
 
-React automatically gives it two things:
+function App() {
+  const [user, setUser] = useState('Guest');
 
-UserContext.Provider → sends data
+  return (
+    // All components within the Provider can access the data stored in 'user'
+    <UserContext.Provider value={user}>
+      <UserProfile />
+    </UserContext.Provider>
+  );
+}
 
-useContext(UserContext) → receives data
+function UserProfile() {
+  const { user, setUser } = useContext(UserContext); // destruct the data you want from provider component
+  return (
+    <div>
+      <p>Hello {user}</p>
+      <button onClick={() => setUser("Jane Doe")}>
+         Log In as Jane
+      </button>
+    </div>
+  );
+}
+```
 
-🔹 What this line does (step-by-step)
-js
-Copy code
-const { user, setUser } = useContext(UserContext);
-Step 1: Read the context value
-useContext(UserContext) tells React:
+<br/>
 
-“Give me the value from the nearest <UserContext.Provider> above me.”
+## What Is ```createContext()```?
+```javascript
+import { createContext } from "react";
 
-That value comes from something like:
+const UserContext = createContext();
+```
+```createContext()``` creates a Context object, giving access to the properties .Provider and .Consumer
+<br/><br/>
+```Provider```: This is a React component (i.e. <MyContext.Provider>) used to wrap the part of the component tree that needs access to the shared data. It accepts a value prop, which is the data made available to all descendants.<br/>
 
-js
-Copy code
-<UserContext.Provider value={{ user, setUser }}>
-Step 2: Destructure the returned object
-The value returned is an object:
+```Consumer```: This is a legacy component (i.e. <MyContext.Consumer>) for accessing the context value. In modern functional components, the useContext hook is the preferred and more concise way to consume the context.<br/>
 
-js
-Copy code
-{ user: "Guest", setUser: function }
-So this line:
+<br/>
 
-js
-Copy code
-const { user, setUser } = useContext(UserContext);
-is the same as:
+## What Is ```useContext()```?
+```javascript
+import { useContext } from "react";
 
-js
-Copy code
-const context = useContext(UserContext);
-const user = context.user;
-const setUser = context.setUser;
-🔹 What each variable means
-Variable	Meaning
-user	The current user value stored in state
-setUser	Function used to update that value
-UserContext	The shared context object
-useContext()	Hook to access the context
-
-🔹 Why this works
-Because your component is inside the <UserContext.Provider> tree.
-
-React automatically links:
-
-the Provider (source of data)
-
-the Consumer (useContext call)
-
-No props required.
-
-🔹 Simple Mental Model
-Think of UserContext as a Wi-Fi signal
-Provider = router
-useContext = device connecting to it
-
-If you’re inside the signal range, you get the data.
-
-✅ Summary
-createContext() creates a shared data container
-
+const { user, setUser} = useContext();
+```
+```useContext()``` is a React Hook that lets a component read data from a Context.<br/>
+**It basically tells React:** “Give me the value from the nearest <UserContext.Provider> above me.”
 Provider supplies the data
 
 useContext() reads the data
