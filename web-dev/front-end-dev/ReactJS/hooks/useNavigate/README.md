@@ -44,3 +44,21 @@ It’s commonly used after events like -> **form submissions, button clicks, or 
 - Clicking a button to change page
 - Redirect after login
 - Conditional navigation
+
+## Navigating Back or Forward
+You can also use the navigate function to move through the history stack like the browser's back and forward buttons by passing a number as an argument: 
+
+- ```navigate(-1);``` // Go back one step in history
+- ```navigate(1);``` // Go forward one step in history 
+
+## Navigation can pass state values
+Data can be passed between components during navigation using the state option: 
+```javascript
+// On Component A
+navigate('/take-quiz/123', { state: { quiz: quizData } });
+
+// On Component B (destination)
+import { useLocation } from 'react-router-dom';
+const location = useLocation();
+const quizData = location.state?.quiz;
+```
