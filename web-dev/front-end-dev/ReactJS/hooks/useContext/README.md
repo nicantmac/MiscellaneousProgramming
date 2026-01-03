@@ -1,8 +1,7 @@
 # createContext() & useContext()
+both these together allows components deep in the component tree to access values provided by a prior or parent component.
 
-This README explains what this line does:
-
-```js
+```javascript
 const { user, setUser } = useContext(UserContext);
 🔹 What is useContext?
 useContext is a React Hook that lets a component access shared data from a Context without passing props manually.
