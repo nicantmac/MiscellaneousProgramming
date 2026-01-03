@@ -66,4 +66,4 @@ useEffect(() => {
 
 ```Rendering logic```: Any code that determines what the UI looks like should be "pure" and live directly in the component's main body, not inside an effect that fires after the UI is already painted. 
 
-If something can be derived directly from props or state — don’t put it in an effect.
+**if something can be derived directly from props or state — don’t put it in an effect.**
