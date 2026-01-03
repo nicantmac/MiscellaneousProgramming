@@ -1,4 +1,4 @@
-# Understanding `useContext(UserContext)`
+# createContext() & useContext()
 
 This README explains what this line does:
 
