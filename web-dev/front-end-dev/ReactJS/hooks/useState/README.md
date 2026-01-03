@@ -3,12 +3,12 @@
  When updated, this triggers a re-render, which is crucial for dynamic UIs like counters or form inputs
 
 To use `useState()` in your React applications, **start with** importing useState from React library.
-```
+```javascript
 import { useState } from 'react';
 ```
 
 ## How it works?
-```
+```javascript
 export default function App() {
   const [state, setState] = useState(initialValue);  ←-
   // ...
