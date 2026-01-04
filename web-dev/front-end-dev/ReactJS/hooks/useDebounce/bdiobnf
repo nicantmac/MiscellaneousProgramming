@@ -1,1 +1,5 @@
-fdsn
+useDebounce is a custom React hook that delays updating a value until a specified time has passed since 
+the last change, preventing rapid, unnecessary re-renders or expensive operations (like API calls) from 
+happening on every keystroke or event, thereby boosting application performance. It works by setting a 
+timer; if the input value changes before the timer finishes, the old timer is cleared, and a new one starts, 
+only updating the state (the debounced value) once the user pauses for the set duration. 
