@@ -1,4 +1,46 @@
-React Conditional Rendering Cheat Sheet
+# Various Rendering in React
+Rendering -→ React basically deciding what JSX becomes visible on the screen
+
+## Different types of rendering?
+- Ternary rendering (most common)
+- Conditional rendering (short-circut rendering)
+- Conditional rendering with ```if``` (outside JSX)
+
+React is constantly asking: “What should I show right now based on the current data?”
+
+<br/>
+
+## Most common type of render
+### Ternary Render
+#### Syntax
+```javascript
+condition ? renderIfTrue : renderIfFalse
+```
+#### Real-world example
+```javascript
+{isLoggedIn ? <Dashboard /> : <Login />}
+```
+so when user is logged in, let's show their dashboard, if not let's prompt user to login
+
+So ultimately, whenever you want something between two clear states
+
+<br/>
+
+## Second most common type of render
+### Conditional Render or (short-circut render)
+#### Syntax
+```javascript
+condition && <Component />
+```
+#### Real-world example
+```javascript
+{isLoading && <Spinner />}
+```
+so **ONLY** when isLoading is ```true```, let's render loading animation component. If ```false``` nothing happens we move on
+
+So ultimately, devs conditionally render when there is no need for an ```else block``` render
+
+
 This guide covers the formal terms, patterns, and "gotchas" of conditional rendering in React, formatted for quick reference in projects or interview prep.
 1. Logical AND (&&) Operator
 Formal Term: Short-Circuit Evaluation.
