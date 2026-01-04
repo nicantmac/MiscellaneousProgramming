@@ -1,7 +1,7 @@
-// child component
-/* writing "props" now holds all data stated from parent.
-   use dot notation to access values, i.e. props.name -> Jordan */
+// Child component
 function WelcomeMessage(props) {
+   /* writing "props" now holds all data stated from parent.
+      use dot notation to access values, i.e. props.name -> Jordan */
   return (
     <div style={{ border: "1px solid #ccc", padding: "10px" }}>
       {/* dot notation let's us access specific data */}
@@ -11,7 +11,7 @@ function WelcomeMessage(props) {
   );
 }
 
-// parent component
+// Parent component
 export default function App() {
   return (
     <div>
