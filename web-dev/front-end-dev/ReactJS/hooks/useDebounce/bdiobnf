@@ -20,5 +20,7 @@ Search Inputs: Triggering search API calls only after the user stops typing.
 Auto-Save: Saving form data after a pause in typing.
 Window Resizing/Scrolling: Handling expensive calculations for resize or scroll events. 
 
+https://usehooks.com/usedebounce
+
 Key Benefit
 Performance: Reduces load on servers and the UI by batching updates, preventing function overload from rapid events. 
