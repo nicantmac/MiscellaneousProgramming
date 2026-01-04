@@ -44,11 +44,11 @@ It’s basically React’s way of saying: “I need to remember something, but I
 
 ## Key Difference From useState
 #### 🔹 Mental Model (Very Important)
-```useState``` -→  “I want React to re-render when this changes”
+```useState``` -→ “I want React to re-render when this changes”
 ```javascript
 const [num, setNum] = useState(0); // triggers re-render
 ```
-```useRef``` -→  “I just want to remember something”
+```useRef``` -→ “I just want to remember something”
 ```javascript
 const count = useRef(0); // silent storage
 ```
