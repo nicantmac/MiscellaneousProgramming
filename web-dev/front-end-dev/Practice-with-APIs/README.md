@@ -1,4 +1,4 @@
-# 🧩 API Practice with ```JavaScript``` and ```React```
+# 🧩 API Practice with JavaScript and React
 
 This repository contains my practice projects for working with APIs using both **Vanilla JavaScript** and **React**.  
 I'm exploring how to fetch, display, and manage data from APIs in different frontend environments.
