@@ -1,1 +1,59 @@
-cfeww
+In Express.js, JSON is typically handled in two ways: parsing incoming JSON request bodies using express.json() middleware, and sending a JSON response to the client using res.json(). 
+1. Parsing Incoming JSON Requests
+To read data sent from a client in JSON format (e.g., in a POST or PUT request), you need to use the built-in express.json() middleware. This makes the parsed data available in req.body. 
+Example:
+javascript
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Use built-in middleware to parse JSON bodies
+app.use(express.json());
+
+// A POST route to handle incoming JSON data
+app.post('/profile', (req, res) => {
+  // Access the parsed JSON data from req.body
+  const name = req.body.name;
+  const email = req.body.email;
+
+  console.log(`Received data for user: ${name}, ${email}`);
+
+  // Send a JSON response back to the client
+  res.json({
+    message: "Data received successfully",
+    userData: { name, email }
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+Client-side JSON payload for the above example:
+json
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+2. Sending JSON Responses
+To send a JSON object back to the client, you use the res.json() method. This method automatically sets the Content-Type header to application/json and converts the provided JavaScript object into a JSON string. 
+Example:
+javascript
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// A GET route that sends a JSON response
+app.get('/data', (req, res) => {
+  const userData = {
+    id: 101,
+    username: "testuser",
+    status: "active"
+  };
+
+  // Send the JavaScript object as a JSON response
+  res.status(200).json(userData);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
