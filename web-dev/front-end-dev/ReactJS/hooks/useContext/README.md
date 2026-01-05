@@ -8,6 +8,38 @@ import { createContext, useContext } from 'react';
 ```
 
 ## How it works?
+### Really Quick on why we utilize createContext & useContext
+We want to avoid this thing called Prop drilling is the process of passing data (props) down through multiple nested components in a React component tree, even when the intermediate components do not need the data themselves<br/>
+The following example shows how data passes through ```App → Parent → Child → Grandchild```<br/>
+Parent and Child components are part of the prop drilling process because they don't consume the data prop but must accept and pass it down the hierarchy. 
+
+Drawbacks:
+- Reduced Readability & Maintainability: It becomes harder to track the flow of data through many layers of components, making the codebase messy and difficult to understand.
+- Tightly Coupled Components: Components become dependent on the specific structure of the component tree, making it difficult to refactor or reuse them in different parts of the application without modifications.
+- Unnecessary Re-renders: When the prop changes, all intermediate components often re-render, even if they don't use the prop, which can lead to performance issues. 
+
+```jsx
+function App() {
+  const data = 'Hello from App';
+  return <Parent data={data} />; // App passes 'data' to Parent
+}
+
+function Parent({ data }) {
+  // Parent doesn't use 'data', but passes it to Child
+  return <Child data={data} />;
+}
+
+function Child({ data }) {
+  // Child doesn't use 'data', but passes it to Grandchild
+  return <Grandchild data={data} />;
+}
+
+function Grandchild({ data }) {
+  return <p>{data}</p>; // Grandchild finally uses 'data'
+}
+```
+Overall from Prop Drilling: React Context API: A built-in React feature that allows data to be shared across the component tree without passing props manually at every level. This is ideal for managing global state like themes, user authentication status, or language preferences.
+
 ```javascript
 import { createContext, useContext } from 'react';
 
