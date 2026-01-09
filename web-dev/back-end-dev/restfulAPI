@@ -1,0 +1,39 @@
+https://www.w3schools.com/nodejs/nodejs_rest_api.asp
+
+REST (Representational State Transfer) is a widely adopted architectural style for designing networked applications that use standard HTTP requests to communicate between a client and a server. JavaScript, particularly with the Node.js runtime and frameworks like Express.js, is ideally suited for building and consuming these APIs. 
+Core Concepts of RESTful APIs
+REST APIs function using the standard HTTP request-response cycle and are built around several key principles: 
+Resources: Everything is treated as a resource, identified by a unique Uniform Resource Identifier (URI), typically a URL (e.g., /api/users).
+HTTP Methods: Standard HTTP verbs correspond to CRUD (Create, Read, Update, Delete) operations:
+GET: Retrieves data from a specified resource. It should only read data and not modify the server state.
+POST: Sends data to the server to create a new resource.
+PUT: Updates an existing resource with the complete new data representation.
+DELETE: Removes a specified resource.
+Statelessness: Each request from a client must contain all necessary information for the server to understand and process it. The server does not store any client session data between requests.
+Data Format: Data is typically exchanged in the JSON (JavaScript Object Notation) format because it is language-agnostic and easy for both humans and machines to read. 
+Building REST APIs with JavaScript (Node.js and Express) 
+JavaScript is excellent for building the server-side of a REST API due to its event-driven, non-blocking architecture, which handles many concurrent requests efficiently. The most common approach uses Node.js and the Express.js framework. 
+A basic server setup using Express looks like this (in a server.js file): 
+javascript
+const express = require('express');
+const app = express();
+app.use(express.json()); // Middleware to parse JSON bodies
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+
+// Example GET endpoint
+app.get('/api/items', (req, res) => {
+    // In a real application, you would fetch data from a database
+    res.status(200).json({ message: 'List of items' }); 
+});
+This sets up a basic server and defines a GET route. 
+Consuming REST APIs in JavaScript 
+On the client side (e.g., in a web browser), JavaScript uses built-in APIs or libraries to make HTTP requests: 
+The fetch() API: This modern browser API provides a simple, promise-based interface for making asynchronous requests.
+javascript
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+Axios: A popular, third-party library for making HTTP requests that works in both the browser and Node.js. It offers a cleaner API and built-in features like automatic JSON transformation and request/response interception. 
+Both methods allow JavaScript applications to interact with RESTful services, making it a cornerstone technology for modern web development. 
