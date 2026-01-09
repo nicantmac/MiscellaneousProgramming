@@ -1,1 +1,19 @@
-vfdsvfs
+different types of routing in react js
+
+In React JS, routing is primarily managed using the React Router library, which offers different types of routers based on the environment and URL management needs. The main types of routers and routing techniques include: 
+Types of Routers (Components)
+These components wrap your application and dictate how the URL and history are handled. 
+BrowserRouter: The most common and recommended router for modern web applications. It uses the HTML5 History API (pushState, replaceState) to keep the UI in sync with a clean, human-readable URL (e.g., /home, /about). It requires a server capable of handling dynamic URLs (always serving the same index.html file, letting React manage the route).
+HashRouter: This router uses the hash portion of the URL (e.g., http://example.com/#/about) to manage navigation. The part after the # symbol is not sent to the server, making it suitable for static sites or environments where you cannot configure the server to handle dynamic URLs.
+MemoryRouter: This keeps the history of the "URL" in memory and does not read from or write to the browser's address bar. It is ideal for non-browser environments like React Native, testing, or desktop apps (e.g., Electron) where URL manipulation is not required or possible.
+StaticRouter: Used for server-side rendering (SSR), where the location is static and the app needs to render a single route to static HTML on the server. 
+
+
+Types of Routing Techniques/Features
+These describe how routes are defined and function within the application using the components above. 
+Declarative Routing: The standard approach using React Router components like <Routes>, <Route>, <Link>, and <NavLink> to define navigation paths and the components to render for those paths.
+Dynamic Routing: This allows for routes with parameters to render content based on the URL's value (e.g., /user/:userId or /blog/:slug). The useParams hook is used to access the dynamic segments within the component.
+Nested Routing: A way to structure routes hierarchically, where child components render inside a parent component's layout using the <Outlet /> component.
+Programmatic Navigation: Navigating users between routes using code, often after an action like a form submission or login. This is done with the useNavigate hook.
+Protected/Private Routes: Implementing logic (sometimes using route guards or wrapper components) to restrict access to certain routes based on conditions, such as user authentication status, using components like <Navigate>.
+Lazy Loading Routes: An optimization technique using React.lazy() and Suspense to code-split the application and load route components only when they are needed, improving initial load performance. 
