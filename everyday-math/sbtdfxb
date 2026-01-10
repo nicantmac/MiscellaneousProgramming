@@ -13,3 +13,6 @@ into an integer. When converting a floating-point number to an integer, int() tr
 decimal part, effectively rounding down to the nearest whole number.
 
 Example: int(5.0) would be 5. int(3.162) would be 3.
+
+
+dfghjk
