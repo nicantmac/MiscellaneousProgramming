@@ -1,5 +1,5 @@
 The event loop is a core mechanism in JavaScript that enables non-blocking, asynchronous programming despite JavaScript being a single-threaded language. It continuously monitors the call stack and various queues to ensure smooth and responsive application performance by coordinating the execution of code. 
-Key Components of the Event Loop
+Key Components of the Event Loop lll
 The event loop works in tandem with several components of the JavaScript runtime environment (e.g., the web browser or Node.js): 
 Call Stack: A Last-In, First-Out (LIFO) data structure where synchronous code is executed immediately. When a function is called, it's pushed onto the stack, and when it returns, it's popped off.
 Web APIs (Host Environment APIs): These are non-JavaScript threads provided by the browser (like setTimeout, fetch, DOM events) or Node.js APIs (file system I/O) that handle time-consuming operations in the background.
