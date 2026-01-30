@@ -1,4 +1,4 @@
-// child component
+// child component (helper)
 function Card({ children }) {
   return (
     <div className="rounded-xl border shadow-lg p-6 bg-white">
