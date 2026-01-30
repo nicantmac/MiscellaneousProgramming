@@ -5,16 +5,16 @@ function ProductCard({ name, price, category, discount = 0 }) {
   const finalPrice = price - discount;
 
   return (
-    <div className="p-4 border rounded-lg shadow-sm">
+    <div>
       {/* We can use the variables directly without typing 'props.' */}
-      <span className="text-xs font-bold uppercase text-blue-500">{category}</span>
-      <h2 className="text-xl font-semibold">{name}</h2>
+      <span>{category}</span>
+      <h2>{name}</h2>
       
-      <div className="mt-2">
+      <div>
         {discount > 0 ? (
-          <p className="text-green-600 font-bold">${finalPrice} <span className="line-through text-gray-400 text-sm">${price}</span></p>
+          <p>${finalPrice} <span>${price}</span></p>
         ) : (
-          <p className="text-gray-900 font-bold">${price}</p>
+          <p>${price}</p>
         )}
       </div>
     </div>
@@ -24,8 +24,8 @@ function ProductCard({ name, price, category, discount = 0 }) {
 // parent component
 export default function ShopPage() {
   return (
-    <main className="p-10 space-y-4"> {/* main wrapper */}
-      <h1 className="text-3xl font-bold">Store Front</h1> {/* regular header text */}
+    <main> {/* main wrapper */}
+      <h1>Store Front</h1> {/* regular header text */}
       
       {/* create child compnt's & passed manual data via prop names that the child will destructure */}
       {/* Put nums, arrys & bools in curly brack's, strings don't need curly brack's */}
