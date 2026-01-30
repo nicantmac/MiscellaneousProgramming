@@ -1,8 +1,8 @@
 // child component (helper)
 function Card({ children }) {
   return (
-    <div className="rounded-xl border shadow-lg p-6 bg-white">
-      {children} {/* This is the slot where the Parent's h1 and p tags go */}
+    <div className="child-section">
+      {children} {/* This is the slot where the Parent's h1 and p tags will go */}
     </div>
   );
 }
