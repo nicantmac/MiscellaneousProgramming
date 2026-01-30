@@ -1,7 +1,7 @@
 # Foundations of Data Structures & Algorithms 📚
 
 ### Overview
-Personal notes with ```examples``` and ```explanations```, and ```practice problems``` organized by **topic**<br/>
+Personal notes with ```examples``` and ```explanations```, and ```practice problems``` organized by **topic**.<br/>
 For learning and reinforcing core **Data Structures and Algorithmic** concepts. This Repo is a reference library to review, practice, and build an intuition for technical approachs and **understanding the patterns**, not memorizing code.
 
 <hr>
