@@ -1,1 +1,1 @@
-ghj
+big-omega-Ω
