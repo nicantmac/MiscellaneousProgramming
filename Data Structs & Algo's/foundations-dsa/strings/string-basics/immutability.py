@@ -14,7 +14,7 @@ Many bugs come from forgetting this.
 s = "hey"
 # s[0] = "H" # Outputs -> TypeError (NOT allowed)
 
-print(s)  # still "hey"
+print(s)  # Output is still -> "hey"
 
 
 # 2. WHY STRINGS ARE IMMUTABLE
