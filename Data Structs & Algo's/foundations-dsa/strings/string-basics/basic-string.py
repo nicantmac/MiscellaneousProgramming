@@ -10,8 +10,8 @@ In Python:
 - Strings can be iterated like arrays
 '''
 
-# 1. CREATING STRINGS
 
+# 1. CREATING STRINGS
 # We can use 'single' and "double" quotes to declare strings
 s1 = 'hello' # Using single quotes
 s2 = "world" # Using double quotes
