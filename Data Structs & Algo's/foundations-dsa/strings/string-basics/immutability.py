@@ -17,7 +17,8 @@ s = "hey"
 print(s)  # Output is still -> "hey"
 
 
-# 2. WHY STRINGS ARE IMMUTABLE
+
+# 1. WHY STRINGS ARE IMMUTABLE
 """
 Strings are immutable for:
 - Performance
@@ -32,7 +33,7 @@ b = "data"
 print(a is b)  # Often True (same memory location)
 
 
-# 3. "MODIFYING" A STRING ACTUALLY CREATES A NEW ONE
+# 2. "MODIFYING" A STRING ACTUALLY CREATES A NEW ONE
 word = "hello"
 new_word = word + "!" # changes are stored in new string
 
@@ -42,7 +43,7 @@ print("string 1:", word, "- string 2", new_word)
 print(word is new_word)  # False
 
 
-# 4. COMMON BEGINNER MISTAKE
+# 3. COMMON BEGINNER MISTAKE
 s = "abc"
 # Trying to change one character
 # s[1] = "x" # Output: TypeError
@@ -52,7 +53,7 @@ s = s[0] + "x" + s[2]
 print(s) # Output: "axc"
 
 
-# 5. IMMUTABILITY IN LOOPS (VERY COMMON DSA PATTERN)
+# 4. IMMUTABILITY IN LOOPS (VERY COMMON DSA PATTERN)
 result = ""
 for char in "abc":
     result = result + char.upper()
@@ -67,7 +68,7 @@ print(result)  # Output: "ABC"
 # This works, but is inefficient for very large strings.
 
 
-# 6. BETTER PATTERN: BUILD WITH A LIST
+# 5. BETTER PATTERN: BUILD WITH A LIST
 chars = []
 for char in "abc":
     chars.append(char.upper())
@@ -79,7 +80,7 @@ result = "".join(chars)
 print(result)  # "ABC"
 
 
-# 7. WHY THIS MATTERS IN DSA
+# WHY THIS MATTERS IN DSA
 """
 In DSA problems:
 - You CANNOT modify a string in place
